@@ -2,39 +2,37 @@
 
 The task is to create a serverless application using React js, AWS services : API Gateway, Lambda functions, DynamoDB, S3. 
 
-## AWS Configuration steps:
-# S3 Bucket
+# AWS Configuration steps:
+## S3 Bucket
 1.  create a bucket and give the accesss to putObject.
 2.  upload a script.py file to the bucket and give access to EC2 so it run it.
 
-# API Gateway
+## API Gateway
 1.  create new API Gateway and choose REST API option.
 2.  create a POST method with intigration type lambda and select uploadFileHandle function.
 3.  After creation, enable CORS and deploy that.
 4.  copy the URL to send the post request and attach at frontend side.
 
-# Lambda - uploadFileHandle
+## Lambda - uploadFileHandle
 1.  create above lambda function which will be triggered by API Gateway POST method.
 2.  follow the python code and refer the comments.
 
-# DynamoDB
+## DynamoDB
 1.  create a table under DynamoDB.
 2.  Update setting >> Export and Stream >> Trigger - enable it with lambda triggerByDB.
 3.  follow the python code and refer the comments.
 
-# Lambda - triggerByDB
+## Lambda - triggerByDB
 1.  create above lambda function which will be triggered by DynamoDB.
 2.  follow the python code and refer the comments.
 
-## Note: 
+# Note: 
 -   Use IAM role to configure all the services as per AWS best practices.
 -   Manage the roles for lambda and EC2 instance.
 -   Give only required permission at all.
 
 
-
-
-## Frontend Installation and Deployment:
+# Frontend Installation and Deployment:
 
 1.	Clone the UI system into a directory on your system using the below Github link.
 2.	via SSH: > git clone git@github.com:jashmin3998/Stock_Trading_UI.git 
