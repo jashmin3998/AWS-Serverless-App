@@ -37,7 +37,7 @@ The task is to create a serverless application using React js, AWS services : AP
 
 1.	Clone the UI system into a directory on your system using the below Github link.
 2.	via SSH: > git clone git@github.com:jashmin3998/AWS-Serverless-App.git 
-3.	via HTTPS: > git clone [https://github.com/jashmin3998/Stock_Trading_UI.git](https://github.com/jashmin3998/AWS-Serverless-App.git)
+3.	via HTTPS: > git clone [here](https://github.com/jashmin3998/AWS-Serverless-App.git)
 4.	change BaseApiURL in axios.js to communicate with API Gateway and bucket name to upload file to S3 bucket.
 5.	set your AWS Access key and Seceret Access key.
 6.	Install npm and Run 'npm run build' command. It creates the build directory in the project folder.
